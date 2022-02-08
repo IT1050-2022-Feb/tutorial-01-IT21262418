@@ -13,7 +13,21 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
-  
+
+  int number;
+  int i;
+  int total=0;
+
+  printf("Enter the number you want to count sum of previous numbers :");
+  scanf("%d",&number);
+
+  for (i=1;i<=number;i++)
+    {
+      total = total+i;
+    }
+
+  printf("sum :%d",total);
+    
   return 0;
 }
 
